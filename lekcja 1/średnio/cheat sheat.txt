@@ -1,0 +1,6 @@
+display: flex; wyświetlanie flex
+align-items: top; pszejście pszedmiotów do góry
+justify-content: space-around; rozproszenie zawartości z miejcem wokoło
+opacity: x; pszezroczystośc
+::before pszemiot pszed danym divem itp. muśi zawierać content
+flex-direction: column; kierunek pszedmiotów w flex

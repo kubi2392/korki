@@ -1,0 +1,6 @@
+padding: x; margines wewnętszny 
+transition: x; szas pszejścia 
+text-align: center; wycętrowanie textu
+font-size: x; wielkośc czciąki
+font-weight: x; gróbość czciąki 
+float: x; odpływanie
