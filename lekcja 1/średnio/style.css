@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+nav{
+    height: 200px;
+    background-color: #cfcfcf;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+}
+.pojemnik{
+    height: fit-content;
+    width: 20%;
+    background-color: #f00;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.zawsze-widziany{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.kafelek{
+    height: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.pojemnik:hover .kafelek{
+    height: 100px;
+    opacity: 1;
+    pointer-events: all;
+}
+.content{
+    padding: 30px;
+    height: 300px;
+    width: 100vw;
+    background-color: aliceblue;
+}
+p::before{
+    font-size: 60px;
+}
+.content:not(:hover) p::before{
+    content: "witaj";
+    background-color: #0f0;
+}
+.content:hover p::before{
+    content: "żegnaj";
+    background-color: #f00;
+}

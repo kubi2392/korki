@@ -1,0 +1,28 @@
+:root {
+  --color-red: #aa2121;
+  --color-grean: #21aa21;
+  --color-blue: #2121aa;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+nav{
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    margin-top: -1000px;
+    height: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s*var(--delay));
+}
+nav:hover .logo{
+    margin-top: 0px;
+}
