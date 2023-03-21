@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="flex-box ball-one">
+      <p>
+        display: flex;<br />
+        flex-direction: column;<br />
+      </p>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+    </div>
+    <div class="flex-box ball-two">
+      <p>
+        display: flex;<br />
+        flex-direction: row;<br />
+      </p>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+    </div>
+    <div class="flex-box ball-thre">
+      <p>
+        display: flex;<br />
+        flex-direction: row;<br />
+        justify-content: space-around;<br />
+      </p>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+    </div>
+    <div class="flex-box ball-four">
+      <p>
+        display: flex; <br />
+        flex-direction: row;<br />
+        justify-content: space-around;<br />
+        align-items: center;
+      </p>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+    </div>
+    <div class="flex-box ball-five">
+      <p>
+        display: flex;<br />
+        flex-direction: row;<br />
+        justify-content: flex-end;<br />
+        align-items: flex-end;<br />
+      </p>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+      <div class="flex-ball"></div>
+    </div>
+    <div class="flex-box-100p">
+      <label for="select-flex-justyfy">justify-content:</label>
+      <select id="select-flex-justyfy">
+        <option value="left">left</option>
+        <option value="right">right</option>
+        <option value="center">center</option> 
+        <option value="space-around">space-around</option>
+        <option value="space-evenly">space-evenly</option>
+        <option value="space-between">space-between</option>
+      </select>
+      <label for="select-flex-align">align-items:</label>
+      <select id="select-flex-align">
+        <option value="flex-start">flex-start</option>
+        <option value="end">end</option>
+        <option value="center">center</option>
+        
+      </select>
+      <div id="flex-box" class="custom">
+        <div class="flex-ball"></div>
+        <div class="flex-ball"></div>
+        <div class="flex-ball"></div>
+        <div class="flex-ball"></div>
+        <div class="flex-ball"></div>
+      </div>
+      <div class="custom center"><div class="code" id="code">.class&nbsp;&#123;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;display: flex ;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;align-items: left ;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;justify-content: flex-start ;<br>
+        &#125;
+        
+      </div>
+    </div>
+  </body>
+</html>

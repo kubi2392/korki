@@ -4,3 +4,8 @@ justify-content: space-around; rozproszenie zawartości z miejcem wokoło
 opacity: x; pszezroczystośc
 ::before pszemiot pszed danym divem itp. muśi zawierać content
 flex-direction: column; kierunek pszedmiotów w flex
+.class {
+ display: flex ;
+ align-items: center ;
+ justify-content: space-between ;
+}

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.flex-box{
+    height: 20vw ;
+    width: 20%;
+    background-color: rgb(144, 186, 212);
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 10px black;
+    position: relative;
+}
+p{
+    width: 20vh;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+}
+.flex-ball{
+height:50px;
+width: 50px;
+background-color: rgb(255, 255, 255);
+border-radius: 50%;
+}
+.ball-one{
+    display: flex;
+    flex-direction: column;
+}
+.ball-two{
+    display: flex;
+    flex-direction: row;
+}
+.ball-thre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ball-four{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.ball-five{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.flex-box-100p{
+    padding: 20px;
+    width: 90vw;
+    background-color: rgb(144, 186, 212);
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 10px black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    row-gap: 10px;
+}
+.custom{
+    background-color: rgb(117, 143, 160);
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 10px black;
+    display: flex;
+
+    height: 200px;
+    width: 90%;
+
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
