@@ -1,0 +1,74 @@
+:root {
+  --main-gray: #ababab;
+  --bg-gray: #cdcdcd;
+}
+* {
+  box-sizing: border-box;
+  image-rendering: optimizeQuality;
+  text-rendering: geometricPrecision;
+}
+body {
+  flex-wrap: wrap;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  background-color: var(--bg-gray);
+  gap: 50px;
+  margin-bottom: 100px;
+}
+nav {
+  height: 200px;
+  width: 80vw;
+  background-color: var(--main-gray);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-tile {
+  height: 100%;
+  width: 30%;
+  background-color: #cccccc;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+  text-decoration: none;
+}
+.nav-tile:hover {
+  scale: 0.9;
+  box-shadow: 0 0 15px black;
+  border: 1px solid black;
+  filter: saturate(10%);
+}
+.nav-rules {
+  background-image: url(./img/bruh.png);
+}
+.nav-galery {
+  background-image: url(./img/galery.png);
+}
+.nav-players {
+  background-image: url(./img/players.png);
+}
+p {
+  text-shadow: 0px 1px 4px black;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: clamp(15px, 5vw, 50px);
+  margin: 10px;
+}
+@media (width<800px) {
+  nav {
+    width: 100vw;
+  }
+}
+@media (width>=800px) {
+  nav {
+    width: 80vw;
+    border-radius: 10px;
+  }
+}

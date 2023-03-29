@@ -30,6 +30,8 @@ height:50px;
 width: 50px;
 background-color: rgb(255, 255, 255);
 border-radius: 50%;
+box-shadow: inset 0px 1px 25px red,0px 0px 5px red;
+
 }
 .ball-one{
     display: flex;
@@ -82,5 +84,7 @@ border-radius: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 20px;
+    font-size: 30px;
+    text-shadow: 1px 0px 2px red,-1px 0px 2px rgb(0, 60, 255);
+    
 }
