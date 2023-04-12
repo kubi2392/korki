@@ -1,0 +1,5 @@
+1. SELECT * FROM pokoje;
+2. SELECT id_pok FROM rezerwacje WHERE liczba_dn>7;
+3. SELECT SUM(liczba_dn) FROM rezerwacje WHERE sezon = 'zima';
+4. UPDATE rezerwacje set liczba_dn = 4 WHERE liczba_dn < 4;
+5. CREATE USER 'najemca'@'%' IDENTIFIED VIA mysql_native_password USING '***';GRANT USAGE ON *.* TO 'najemca'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;

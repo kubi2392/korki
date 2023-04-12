@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.cards {
+  background-color: #333;
+  height: 600px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.card {
+  background-color: rgba(136, 136, 136, 0.02);
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #002;
+  position: relative;
+  cursor: pointer;
+}
+.card::before {
+    transition: 0.1s;
+    opacity: 0;
+  background: radial-gradient(
+    100px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.55),
+    transparent 40%
+  );
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+.card:hover::before{
+    opacity: 1;
+}
